@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'headingnow-74regular';
+    src: url(/fonts/HeadingNow-74Regular.ttf);
+}
+@font-face {
+    font-family: 'headingnow-88heavy';
+    src: url(/fonts/HeadingNow-88Heavy.ttf);
+}
+@font-face {
+    font-family: 'headingnow-88heavyitalic';
+    src: url(/fonts/HeadingNow-88HeavyItalic.ttf);
+}
+
+body{
+    background-color: #13274F ;
+    background-image: url(/img/backgroundpatternimage.png);
+}
+
+/* Estrutura da Homebar */
+.homebar-container{
+    width: 100%;
+}
+.homebar-navigation{
+    display: flex;
+    padding: 20px 20px;
+    gap: 25px;
+    align-items: center;
+}
+.homebar-item{
+    font-family: 'headingnow-74regular';
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    fill: white;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.5s, fill 0.2s;
+}
+.homebar-item:hover{
+    background-color: white;
+    color: black;
+    fill: black;
+    box-shadow: 0px 0px 0px 4px white;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, fill 0.2s;
+}
+.homebar-item:active{
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px 1px white;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+#homebarInicio{
+    background-color: white;
+    color: black;
+}
+
+/* Estrutura do Title */
+.title-container{
+    width: 50%;
+    margin-top: 180px;
+    margin-left: 150px;
+    line-height: 1;
+
+}
+#titleMain{
+    font-family: 'headingnow-88heavyitalic';
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+#titleSub{
+    font-family: 'headingnow-74regular';
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+
+/* Estrutura do Button */
+.default-button-container{
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.default-button{
+    font-family: 'headingnow-74regular';
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: black;
+    padding: 15px 21px;
+    border-radius: 15px;
+    transition: box-shadow 0.2s;
+}
+.default-button:hover{
+    box-shadow: 0px 0px 0px 6px white;
+    transition: box-shadow 0.2s;
+}
+/* Estrutura da Title Image (Pura Gambiarra) */
+.title-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-image: url(/img/titleimage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1000;
+}
