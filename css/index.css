@@ -107,3 +107,23 @@ body{
     background-repeat: no-repeat;
     z-index: -1000;
 }
+
+@media screen and (max-width: 800px){
+    .homebar-container{
+        display: flex;
+        justify-content: center;
+    }
+    .title-container{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .default-button-container{
+        margin-left: 0;
+        text-align: center;
+    }
+    .title-image{
+        display: none
+    }
+    
+}
