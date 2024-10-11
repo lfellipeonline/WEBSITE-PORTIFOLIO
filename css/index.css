@@ -11,9 +11,14 @@
     src: url(/fonts/HeadingNow-88HeavyItalic.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #13274F ;
     background-image: url(/img/backgroundpatternimage.png);
+    margin: 0;
 }
 
 /* Estrutura da Homebar */
@@ -35,6 +40,7 @@ body{
     border-radius: 15px;
     border: 2px solid transparent;
     fill: white;
+    user-select: none;
     transition: background-color 0.2s, color 0.2s, box-shadow 0.5s, fill 0.2s;
 }
 .homebar-item:hover{
@@ -76,7 +82,7 @@ body{
 }
 
 /* Estrutura do Button */
-.default-button-container{
+#buttonExplore{
     margin-top: 30px;
     margin-left: 150px;
     margin-bottom: 30px;
@@ -89,11 +95,29 @@ body{
     background-color: black;
     padding: 15px 21px;
     border-radius: 15px;
-    transition: box-shadow 0.2s;
+    user-select: none;
+    border-style: none;
+    cursor: pointer;
+    transition: box-shadow 0.6s, background-color 0.2s, color 0.2s;
+}
+.default-button a{
+    color: white;
+    text-decoration: none;
+}
+.default-button a:hover{
+    color: black;
+    transition: color 0.2s;
 }
 .default-button:hover{
     box-shadow: 0px 0px 0px 6px white;
-    transition: box-shadow 0.2s;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    transition: box-shadow 0.2s, background-color 0.2s;
+}
+.default-button:active{
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px 2px white;
+    transition: transform 0.1s, box-shadow 0.1s;
 }
 /* Estrutura da Title Image (Pura Gambiarra) */
 .title-image{
@@ -101,11 +125,85 @@ body{
     top: 0;
     right: 0;
     width: 100%;
-    background-image: url(/img/titleimage.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     z-index: -1000;
+}
+/* Estrutura do Sobre */
+.sobre-background-container{
+    background-color: #000000;
+    height: 100vh;
+    margin-top: 230px;
+    box-shadow: 0px 0px 10px 15px black;
+    position: absolute;
+}
+#sobreMain{
+    font-family: 'headingnow-88heavyitalic';
+    text-decoration: underline;
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.sobre-text{
+    font-family: 'headingnow-74regular';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+/* Estrutura do Scroll Up */
+.scrollup-button{
+    font-family: 'headingnow-88heavy';
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.6s, fill 0.2s, font-size 0.2s, transition 0.1s;
+}
+
+.scrollup-button a{
+    color: white;
+    text-decoration: none;
+    border: 20px solid transparent;
+    border-radius: 100%;
+    transition: color 0.2s;
+}
+.scrollup-button:hover a{
+    color: black;
+}
+
+.scrollup-button:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 4px white;
+    font-size: 20px;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, fill 0.2s, font-size 0.2s;
+}
+
+.scrollup-button:active{
+    transform: translateY(3px);
+    transition: transform 0.1s;
+}
+
+/* Estrutura do Scroll Down */
+.scroll-down-arrow{
+    position: absolute;
+    bottom: 20px;
+    align-items: center;
+    transform: translateX(50%);
+    left: 50%;  
+    width: 30px;
+    z-index: 1000;
 }
 
 @media screen and (max-width: 800px){

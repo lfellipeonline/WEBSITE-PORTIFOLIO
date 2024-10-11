@@ -19,7 +19,7 @@
         </g>
         </svg>
             <a class="homebar-item" id="homebarInicio" href="index.html">Início</a>
-            <a class="homebar-item" id="homebarSobre" href="index.html">Sobre</a>
+            <a class="homebar-item" id="homebarSobre" href="#sobreMain">Sobre</a>
             <a class="homebar-item" id="homebarPortifolio" href="index.html">Portifolio</a>
             <a class="homebar-item" id="homebarContato" href="index.html">Contato</a>
         </nav>
@@ -30,10 +30,23 @@
             <h2 class="title-text" id="titleSub">Design & Front End</h2>
         </section>
     <!-- Estrutura do Botão Explorar -->
-        <div class="default-button-container" id="exploreButtonContainer">
-            <a class="default-button" id="exploreButton" href="index.html">EXPLORAR</a>
-        </div>
+        <button class="default-button" id="buttonExplore">
+            <a class="default-button-text" id="buttonExploreText" href="#sobreMain">EXPLORAR</a>
+        </button>
     <!-- Estrutura da Imagem -->
-     <img class="title-image" id="titleImage" src="/img/titleimage.png" alt="">
+     <img class="title-image" id="titleImage" src="/img/titleimage.png" alt="imagem principal">
+    <!-- Estrutura do Sobre -->
+    <div class="sobre-background-container">
+            <h1 class="sobre-text" id="sobreMain">SOBRE MIM</h1>
+            <h2 class="sobre-text" id="sobreSub">Meu nome é Luiz Felipe, sou estudante de Análise e Desenvolvimento de Sistemas na UNINASSAU, com foco primário em Front-End, e linguagens como JavaScript e Python. Sempre em busca de oportunidades para expandir meu conhecimento e colaborar em projetos. Além de possuir experiência em Design Gráfico e Edição de Vídeos pelo Adobe Premiere Pro.</h2>
+    </div>
+    <!-- Estrutura da Seta -->
+     <div>
+        <img class="scroll-down-arrow" src="/img/arrowDown.svg" alt="seta" width="40px">
+     </div>
+    <!-- Estrutura do Scroll Up -->
+    <button class="scrollup-button" id="scrollUpButton">
+        <a class="scrollup-button-text" id="scrollUpButtonText" href="#homebarContainer">↑</a>
+    </button>
 </body>
 </html>
