@@ -20,8 +20,8 @@
         </svg>
             <a class="homebar-item" id="homebarInicio" href="index.html">Início</a>
             <a class="homebar-item" id="homebarSobre" href="#sobreMain">Sobre</a>
-            <a class="homebar-item" id="homebarPortifolio" href="index.html">Portifolio</a>
-            <a class="homebar-item" id="homebarContato" href="index.html">Contato</a>
+            <a class="homebar-item" id="homebarPortifolio">Portifolio</a>
+            <a class="homebar-item" id="homebarContato" href="#contatoContainer">Contato</a>
         </nav>
      </header>
      <!-- Estrutura do Title -->
@@ -39,6 +39,7 @@
     <div class="sobre-background-container">
             <h1 class="sobre-text" id="sobreMain">SOBRE MIM</h1>
             <h2 class="sobre-text" id="sobreSub">Meu nome é Luiz Felipe, sou estudante de Análise e Desenvolvimento de Sistemas na UNINASSAU, com foco primário em Front-End, e linguagens como JavaScript e Python. Sempre em busca de oportunidades para expandir meu conhecimento e colaborar em projetos. Além de possuir experiência em Design Gráfico e Edição de Vídeos pelo Adobe Premiere Pro.</h2>
+            <img src="/img/sobrePlaceholder.png" alt="imagem placeholder" id="imagemSobre">
     </div>
     <!-- Estrutura da Seta -->
      <div>
@@ -48,5 +49,26 @@
     <button class="scrollup-button" id="scrollUpButton">
         <a class="scrollup-button-text" id="scrollUpButtonText" href="#homebarContainer">↑</a>
     </button>
+    <!-- Estrutura do Contato -->
+     <section class="contato-container" id="contatoContainer">
+        <h1 class="contato-title">CONTATO</h1>
+    <form action="contato" method="post" class="contato-items">
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name" required placeholder="Digite seu nome" class="contato-input"><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required placeholder="Digite seu E-mail" class="contato-input"><br><br>
+
+        <label for="message">Mensagem:</label><br>
+        <textarea id="message" name="message" rows="5" required placeholder="Digite sua mensagem" class="contato-input"></textarea ><br><br>
+        <button type="submit" class="contato-button">Enviar</button>
+    </form>
+    </section>
+
+    <!-- Estrutura do Footer -->
+    <footer class="footer-container">
+            <h1 class="footer-text" id="footerMain">Luiz Felipe © 2024. Todos os direitos reservados.</h1>
+            <h2 class="footer-text">🚧SITE EM CONSTRUÇÃO🚧</h2>
+    </footer>
 </body>
 </html>
