@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifolio de Luiz Felipe</title>
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/index.css"/>
+    <script src="/js/script.js" defer></script>
   </head>
   <body>
     <!-- Estrutura da Homebar -->
@@ -13,13 +14,14 @@
         <svg
           fill="#000000"
           version="1.1"
-          id="Capa_1"
+          id="homebarConfig"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           width="30px"
           viewBox="0 0 124 124"
           xml:space="preserve"
           class="homebar-item"
+          onclick="homebarConfigClick()"
         >
           <g>
             <path
@@ -41,16 +43,20 @@
         >
       </nav>
     </header>
+    <!-- Estrutura da Aba Flutuante da Homebar -->
+    <div class="aba-flutuante" id="abaFlutuante">
+        <ul class="aba-flutuante-items" id="abaFlutuanteItems">
+            <li>Alternar Visualização</li>
+        </ul>
+    </div>
     <!-- Estrutura do Title -->
     <section class="title-container" id="titleContainer">
       <h1 class="title-text" id="titleMain">LUIZ FELIPE</h1>
       <h2 class="title-text" id="titleSub">Design & Front End</h2>
     </section>
     <!-- Estrutura do Botão Explorar -->
-    <button class="default-button" id="buttonExplore">
-      <a class="default-button-text" id="buttonExploreText" href="#sobreMain"
-        >EXPLORAR</a
-      >
+    <button class="default-button" id="buttonExplore"> EXPLORAR
+      <a class="default-button-text" id="buttonExploreText" href="#sobreMain"></a>
     </button>
     <!-- Estrutura da Imagem -->
     <img
@@ -127,7 +133,7 @@
           class="contato-input"
         ></textarea
         ><br /><br />
-        <button type="submit" class="contato-button">Enviar</button>
+        <button type="submit" class="contato-button">ENVIAR</button>
       </form>
     </section>
 
