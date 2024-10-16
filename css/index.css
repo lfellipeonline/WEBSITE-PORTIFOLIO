@@ -121,7 +121,7 @@ body{
 }
 /* Estrutura da Title Image (Pura Gambiarra) */
 .title-image{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
