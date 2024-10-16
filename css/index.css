@@ -204,11 +204,10 @@ body{
 .scroll-down-arrow{
     position: absolute;
     bottom: 20px;
-    align-items: center;
-    transform: translateX(50%);
     left: 50%;  
     width: 30px;
     z-index: 1000;
+    display: none;
 }
 /* Estrutura do Footer */
 .footer-container{

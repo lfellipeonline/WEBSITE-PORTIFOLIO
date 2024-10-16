@@ -5,6 +5,10 @@ function homebarConfigClick() {
     } else {
         abaFlutuante.style.display = 'none';
     }
-}    
+}
+
+document.getElementById('buttonExplore').onclick = function() {
+    location.href = '#sobreMain'
+}
 
 console.log('Script carregado com sucesso!');
