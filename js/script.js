@@ -32,6 +32,14 @@ document.getElementById('alternarVisualização').onclick = function() {
 
         document.getElementById('contatoContainer').style.backgroundColor = 'black';
         document.getElementById('contatoTitle').style.color = 'white';
+
+        let imagemSobre = document.getElementById('imagemSobre');
+        if (imagemSobre.src.endsWith('sobrePlaceholder.png')) {
+            imagemSobre.src = '/img/sobrePlaceholderWhite.png';
+        } else {
+            imagemSobre.src = '/img/sobrePlaceholder.png';
+        }
+
     }
 }
 
@@ -40,6 +48,7 @@ document.getElementById('alternarVisualização').onclick = function() {
 document.getElementById('buttonExplore').onclick = function() {
     location.href = '#sobreMain'
 }
+
 
 
 
