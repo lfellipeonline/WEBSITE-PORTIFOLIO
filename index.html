@@ -46,7 +46,7 @@
     <!-- Estrutura da Aba Flutuante da Homebar -->
     <div class="aba-flutuante" id="abaFlutuante">
         <ul class="aba-flutuante-items" id="abaFlutuanteItems">
-            <li>Alternar Visualização</li>
+            <li id="alternarVisualização" onclick="alternarVisualizaçãoOnClick()">Alternar Visualização</li>
         </ul>
     </div>
     <!-- Estrutura do Title -->
@@ -64,7 +64,7 @@
       alt="imagem principal"
     />
     <!-- Estrutura do Sobre -->
-    <div class="sobre-background-container">
+    <div class="sobre-background-container" id="sobreBackgroundContainer">
       <h1 class="sobre-text" id="sobreMain">SOBRE MIM</h1>
       <h2 class="sobre-text" id="sobreSub">
         Meu nome é Luiz Felipe, sou estudante de Análise e Desenvolvimento de
@@ -99,7 +99,7 @@
     </button>
     <!-- Estrutura do Contato -->
     <section class="contato-container" id="contatoContainer">
-      <h1 class="contato-title">CONTATO</h1>
+      <h1 class="contato-title" id="contatoTitle">CONTATO</h1>
       <form action="contato" method="post" class="contato-items">
         <label for="name">Nome:</label><br />
         <input
