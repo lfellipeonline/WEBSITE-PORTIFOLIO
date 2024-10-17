@@ -65,6 +65,20 @@ p{
     background-color: white;
     color: black;
 }
+#homebarSearch{
+    font-family: 'headingnow-74regular';
+    border-radius: 15px;
+    border-style: none;
+    font-size: 20px;
+    width: 200px;
+    padding-left: 10px;
+    transition: box-shadow 0.5s;
+
+}
+#homebarSearch:hover{
+    box-shadow: 0px 0px 0px 4px white;
+    transition: box-shadow 0.2s;
+}
 
 /* Estrutura do Title */
 .title-container{

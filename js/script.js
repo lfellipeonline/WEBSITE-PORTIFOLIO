@@ -45,16 +45,24 @@ document.getElementById('alternarVisualização').onclick = function() {
     }
 }
 
+// Funções da Barra de Pesquisa da Homebar
+addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        let homebarSearch = document.getElementById('homebarSearch').value.toLowerCase();
+        if (homebarSearch === 'sobre') {
+            location.href = '#sobreMain';
+        } else if (homebarSearch === 'contato') {
+            location.href = '#contatoContainer';
+        } else if (homebarSearch === 'home') {
+            location.href = '#homeMain';
+        }
+    }
+});
 
 // Funções do Button Explore
 document.getElementById('buttonExplore').onclick = function() {
     location.href = '#sobreMain'
 }
-
-
-
-
-
 
 // Debug Console
 console.log('Script carregado com sucesso!');
