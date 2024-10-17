@@ -13,6 +13,8 @@ function homebarConfigClick() {
             abaFlutuante.style.display = 'none';
             break;
     }
+
+    document.getElementById('abaFlutuanteIdioma').style.display = 'none';
  }
 
 // Funções do Alternar Visualização da Aba Flutuante
@@ -50,6 +52,25 @@ document.getElementById('alternarVisualização').onclick = function() {
 
 
     }
+}
+
+// Função da  Opção Idioma da Aba Flutuante da Homebar
+document.getElementById('alterarIdioma').onclick = function() {
+    let alterarIdioma = document.getElementById('abaFlutuanteIdioma');
+    estadoIdioma = window.getComputedStyle(abaFlutuanteIdioma).display;
+    switch (estadoIdioma) {
+        case 'none':
+            alterarIdioma.style.display = 'block';
+            break;
+        case 'block':
+            alterarIdioma.style.display = 'none';
+            break;
+        default:
+            alterarIdioma.style.display = 'none';
+            break;
+    }
+
+
 }
 
 // Funções da Barra de Pesquisa da Homebar
