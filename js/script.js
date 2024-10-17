@@ -21,6 +21,7 @@ document.getElementById('alternarVisualização').onclick = function() {
 
         document.getElementById('contatoContainer').style.backgroundColor = 'white';
         document.getElementById('contatoTitle').style.color = 'black';
+
     } else {
         document.getElementById('buttonExplore').style.backgroundColor = 'black';
         document.getElementById('buttonExplore').style.color = 'white';
@@ -39,6 +40,7 @@ document.getElementById('alternarVisualização').onclick = function() {
         } else {
             imagemSobre.src = '/img/sobrePlaceholder.png';
         }
+
 
     }
 }
