@@ -1,11 +1,18 @@
 // Funções da Aba Flutuante
 function homebarConfigClick() {
-     let abaFlutuante = document.getElementById('abaFlutuante');
-     if (abaFlutuante.style.display === 'none' || abaFlutuante.style.display === '') {
-         abaFlutuante.style.display = 'block';
-     } else {
-         abaFlutuante.style.display = 'none';
-     }
+    let abaFlutuante = document.getElementById('abaFlutuante');
+    estadoAbaFlutuante = window.getComputedStyle(abaFlutuante).display;
+    switch (estadoAbaFlutuante) {
+        case 'none':
+            abaFlutuante.style.display = 'block';
+            break;
+        case 'block':
+            abaFlutuante.style.display = 'none';
+            break;
+        default:
+            abaFlutuante.style.display = 'none';
+            break;
+    }
  }
 
 // Funções do Alternar Visualização da Aba Flutuante
@@ -58,6 +65,22 @@ addEventListener('keypress', function(event) {
         }
     }
 });
+
+// Funções Ocultar Barra de Buscar
+document.getElementById('alterarBarraBusca').onclick = function() {
+    let barraBusca = document.getElementById('homebarSearch');
+    estadoBarraBusca = window.getComputedStyle(barraBusca).display;
+    switch (estadoBarraBusca) {
+        case 'block':
+            barraBusca.style.display = 'none';
+            break;
+        case 'none':
+            barraBusca.style.display = 'block';
+        default:
+            barraBusca.style.display = 'block';
+            break;
+    }
+}
 
 // Funções do Button Explore
 document.getElementById('buttonExplore').onclick = function() {
