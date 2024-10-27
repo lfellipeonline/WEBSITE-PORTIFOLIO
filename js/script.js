@@ -1,5 +1,5 @@
 // Funções da Aba Flutuante
-function homebarConfigClick() {
+document.getElementById('homebarConfig').onclick = function(){
     let abaFlutuante = document.getElementById('abaFlutuante');
     estadoAbaFlutuante = window.getComputedStyle(abaFlutuante).display;
     switch (estadoAbaFlutuante) {
@@ -15,7 +15,8 @@ function homebarConfigClick() {
     }
 
     document.getElementById('abaFlutuanteIdioma').style.display = 'none';
- }
+}   
+ 
 
 // Funções do Alternar Visualização da Aba Flutuante
 document.getElementById('alternarVisualização').onclick = function() {

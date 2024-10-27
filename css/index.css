@@ -71,7 +71,7 @@ p{
     border-radius: 15px;
     border-style: none;
     font-size: 15px;
-    padding: 5px;
+    padding: 10px;
     width: 200px;
     padding-left: 10px;
     transition: box-shadow 0.5s;
@@ -163,6 +163,7 @@ p{
     color: white;
     margin: 0;
     text-align: center;
+    padding-top: 40px;
     margin-top: 20px;
 }
 .sobre-text{
