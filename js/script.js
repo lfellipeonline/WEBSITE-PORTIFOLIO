@@ -106,7 +106,7 @@ document.getElementById('alterarBarraBusca').onclick = function() {
 
 // Funções do Button Explore
 document.getElementById('buttonExplore').onclick = function() {
-    location.href = '#sobreMain'
+    location.href = 'https://github.com/lfellipeonline'
 }
 
 // Debug Console
